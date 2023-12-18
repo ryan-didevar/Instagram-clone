@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { HiSearch } from "react-icons/hi";
-
+import { AiFillHome } from "react-icons/ai";
+import { FaPlusCircle } from "react-icons/fa";
 const Header = () => {
   return (
     <div>
@@ -31,7 +32,19 @@ const Header = () => {
             className="bg-gray-50 pl-10 border-gray-500 text-sm focus:ring-black focus:border-black rounded-md"
           />
         </div>
-        <h4>Right</h4>
+        <div className="flex space-x-4 items-center">
+          <AiFillHome className="hidden md:inline-flex  h-6 cursor-pointer hover:scale-125 transition-tranform duration-200 ease-out" />
+          <>
+            <FaPlusCircle className="h-6 cursor-pointer hover:scale-125 transition-tranform duration-200 ease-out" />
+            <Image
+              src="https://media.licdn.com/dms/image/D4E35AQEP6ONKbJUGZw/profile-framedphoto-shrink_400_400/0/1681760309205?e=1703494800&v=beta&t=zl-Kt6BZZXI0e7PaE1avrm7d20jXVvArDxdyYwRlsx0"
+              alt="user-image"
+              width={50}
+              height={50}
+              className="rounded-full cursor-pointer"
+            />
+          </>
+        </div>
       </div>
     </div>
   );
