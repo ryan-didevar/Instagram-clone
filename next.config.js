@@ -5,6 +5,8 @@ const nextConfig = {
       { hostname: "repository-images.githubusercontent.com" },
       { hostname: "upload.wikimedia.org" },
       { hostname: "media.licdn.com" },
+      { hostname: "avatars.githubusercontent.com" },
+      { hostname: "cloudflare-ipfs.com" },
     ],
   },
 };
