@@ -5,6 +5,7 @@ export interface User {
   email: string;
   avatar: string;
   password: string;
+  job: string;
   birthdate: Date;
   registeredAt: Date;
 }
@@ -14,6 +15,7 @@ function createRandomUser(): User {
     username: faker.internet.userName(),
     email: faker.internet.email(),
     avatar: faker.image.avatar(),
+    job: faker.person.jobTitle(),
     password: faker.internet.password(),
     birthdate: faker.date.birthdate(),
     registeredAt: faker.date.past(),

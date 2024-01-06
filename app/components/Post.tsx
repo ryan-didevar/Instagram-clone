@@ -15,6 +15,7 @@ const Post = ({ post: { id, username, userImg, img, caption } }: Props) => {
   return (
     <div className="bg-white my-7 border rounded-md">
       <PostHeader userImg={userImg} username={username} />
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img className="object-cover w-full" src={img} alt={caption} />
       <PostButtons />
       <PostComments username={username} caption={caption} />
