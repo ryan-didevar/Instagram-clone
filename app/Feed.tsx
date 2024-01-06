@@ -1,18 +1,20 @@
+import Posts from "./components/Posts";
 import Stories from "./components/Stories";
 
 const Feed = () => {
   return (
-    <div>
+    <main>
       <section>
         {/* Story */}
         <Stories />
         {/* Posts */}
+        <Posts />
       </section>
       <section>
         {/* Profile */}
         {/* Suggestions */}
       </section>
-    </div>
+    </main>
   );
 };
 

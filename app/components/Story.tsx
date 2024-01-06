@@ -8,14 +8,14 @@ const Story = ({ users }: Props) => {
     <>
       {users.map((user) => (
         <div key={user.userId}>
-          {user.username}
           <Image
-            className="rounded-full"
+            className="rounded-full p-[1.5px] border-red-500 border-2 group-hover:scale-110 transition-transform duration-200 ease-out"
             src={user.avatar}
             alt={user.username}
-            width={50}
-            height={50}
+            width={56}
+            height={56}
           />
+          <p className="text-xs w-14 truncate">{user.username}</p>
         </div>
       ))}
     </>
