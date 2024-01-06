@@ -1,4 +1,5 @@
 import PostButtons from "./PostButtons";
+import PostComments from "./PostComments";
 import PostHeader from "./PostHeader";
 
 interface Props {
@@ -16,6 +17,7 @@ const Post = ({ post: { id, username, userImg, img, caption } }: Props) => {
       <PostHeader userImg={userImg} username={username} />
       <img className="object-cover w-full" src={img} alt={caption} />
       <PostButtons />
+      <PostComments username={username} caption={caption} />
     </div>
   );
 };
